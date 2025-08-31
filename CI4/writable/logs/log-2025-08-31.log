@@ -1,0 +1,170 @@
+CRITICAL - 2025-08-31 00:29:16 --> TypeError: App\Controllers\Home::index(): Return value must be of type string, none returned
+[Method: GET, Route: /]
+in APPPATH\Controllers\Home.php on line 11.
+ 1 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Home->index()
+ 2 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController()
+ 3 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest()
+ 4 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+ 6 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb()
+ 7 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\Mahasiswa\\CI4\\public\\index.php')
+CRITICAL - 2025-08-31 00:39:19 --> CodeIgniter\Cache\Exceptions\CacheException: Cache unable to write to "C:\xampp\htdocs\Mahasiswa\CI4\writable\cache/".
+[Method: GET, Route: /]
+in SYSTEMPATH\Cache\Handlers\FileHandler.php on line 66.
+ 1 SYSTEMPATH\Cache\Handlers\FileHandler.php(66): CodeIgniter\Cache\Exceptions\CacheException::forUnableToWrite()
+ 2 SYSTEMPATH\Cache\CacheFactory.php(67): CodeIgniter\Cache\Handlers\FileHandler->__construct()
+ 3 SYSTEMPATH\Config\Services.php(129): CodeIgniter\Cache\CacheFactory::getHandler()
+ 4 SYSTEMPATH\Config\BaseService.php(312): CodeIgniter\Config\Services::cache()
+ 5 SYSTEMPATH\Config\BaseService.php(251): CodeIgniter\Config\BaseService::__callStatic()
+ 6 SYSTEMPATH\Config\Services.php(124): CodeIgniter\Config\BaseService::getSharedInstance()
+ 7 SYSTEMPATH\Config\BaseService.php(321): CodeIgniter\Config\Services::cache()
+ 8 SYSTEMPATH\Config\BaseService.php(202): CodeIgniter\Config\BaseService::__callStatic()
+ 9 SYSTEMPATH\Config\Services.php(454): CodeIgniter\Config\BaseService::get()
+10 SYSTEMPATH\Config\BaseService.php(312): CodeIgniter\Config\Services::responsecache()
+11 SYSTEMPATH\Config\BaseService.php(251): CodeIgniter\Config\BaseService::__callStatic()
+12 SYSTEMPATH\Config\Services.php(450): CodeIgniter\Config\BaseService::getSharedInstance()
+13 SYSTEMPATH\Config\BaseService.php(321): CodeIgniter\Config\Services::responsecache()
+14 SYSTEMPATH\CodeIgniter.php(178): CodeIgniter\Config\BaseService::__callStatic()
+15 SYSTEMPATH\Config\Services.php(164): CodeIgniter\CodeIgniter->__construct()
+16 SYSTEMPATH\Config\BaseService.php(312): CodeIgniter\Config\Services::codeigniter()
+17 SYSTEMPATH\Config\BaseService.php(251): CodeIgniter\Config\BaseService::__callStatic()
+18 SYSTEMPATH\Config\Services.php(159): CodeIgniter\Config\BaseService::getSharedInstance()
+19 SYSTEMPATH\Config\BaseService.php(321): CodeIgniter\Config\Services::codeigniter()
+20 SYSTEMPATH\Config\BaseService.php(202): CodeIgniter\Config\BaseService::__callStatic()
+21 SYSTEMPATH\Common.php(995): CodeIgniter\Config\BaseService::get()
+22 SYSTEMPATH\Boot.php(349): service()
+23 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::initializeCodeIgniter()
+24 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb()
+25 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\Mahasiswa\\CI4\\public\\index.php')
+CRITICAL - 2025-08-31 05:40:25 --> Error: Undefined constant "CodeIgniter\Database\MySQLi\MYSQLI_STORE_RESULT"
+[Method: GET, Route: biodata]
+in SYSTEMPATH\Database\Database.php on line 143.
+ 1 SYSTEMPATH\Database\Database.php(61): CodeIgniter\Database\Database->initDriver()
+ 2 SYSTEMPATH\Database\Config.php(82): CodeIgniter\Database\Database->load()
+ 3 SYSTEMPATH\Model.php(155): CodeIgniter\Database\Config::connect()
+ 4 APPPATH\Controllers\Biodata.php(13): CodeIgniter\Model->__construct()
+ 5 SYSTEMPATH\CodeIgniter.php(903): App\Controllers\Biodata->__construct()
+ 6 SYSTEMPATH\CodeIgniter.php(498): CodeIgniter\CodeIgniter->createController()
+ 7 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest()
+ 8 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+10 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb()
+11 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\ThinkPad\\Desktop\\Productive\\Kuliah\\Proyek 3 Web Development\\Week 2\\CI4\\public\\index.php')
+CRITICAL - 2025-08-31 05:51:20 --> Error: Undefined constant "CodeIgniter\Database\MySQLi\MYSQLI_STORE_RESULT"
+[Method: GET, Route: testdb]
+in SYSTEMPATH\Database\Database.php on line 143.
+ 1 SYSTEMPATH\Database\Database.php(61): CodeIgniter\Database\Database->initDriver()
+ 2 SYSTEMPATH\Database\Config.php(82): CodeIgniter\Database\Database->load()
+ 3 APPPATH\Controllers\TestDB.php(9): CodeIgniter\Database\Config::connect()
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\TestDB->index()
+ 5 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController()
+ 6 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest()
+ 7 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+ 9 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb()
+10 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\ThinkPad\\Desktop\\Productive\\Kuliah\\Proyek 3 Web Development\\Week 2\\CI4\\public\\index.php')
+CRITICAL - 2025-08-31 05:57:46 --> Error: Undefined constant "CodeIgniter\Database\MySQLi\MYSQLI_STORE_RESULT"
+[Method: GET, Route: testdb]
+in SYSTEMPATH\Database\Database.php on line 143.
+ 1 SYSTEMPATH\Database\Database.php(61): CodeIgniter\Database\Database->initDriver()
+ 2 SYSTEMPATH\Database\Config.php(82): CodeIgniter\Database\Database->load()
+ 3 APPPATH\Controllers\TestDB.php(9): CodeIgniter\Database\Config::connect()
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\TestDB->index()
+ 5 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController()
+ 6 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest()
+ 7 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+ 9 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb()
+10 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\ThinkPad\\Desktop\\Productive\\Kuliah\\Proyek 3 Web Development\\Week 2\\CI4\\public\\index.php')
+CRITICAL - 2025-08-31 05:57:58 --> Error: Undefined constant "CodeIgniter\Database\MySQLi\MYSQLI_STORE_RESULT"
+[Method: GET, Route: testdb]
+in SYSTEMPATH\Database\Database.php on line 143.
+ 1 SYSTEMPATH\Database\Database.php(61): CodeIgniter\Database\Database->initDriver()
+ 2 SYSTEMPATH\Database\Config.php(82): CodeIgniter\Database\Database->load()
+ 3 APPPATH\Controllers\TestDB.php(9): CodeIgniter\Database\Config::connect()
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\TestDB->index()
+ 5 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController()
+ 6 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest()
+ 7 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+ 9 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb()
+10 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\ThinkPad\\Desktop\\Productive\\Kuliah\\Proyek 3 Web Development\\Week 2\\CI4\\public\\index.php')
+DEBUG - 2025-08-31 06:13:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-08-31 06:13:43 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "biodata/create.php"
+[Method: GET, Route: biodata/create]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(214): CodeIgniter\Exceptions\FrameworkException::forInvalidFile()
+ 2 SYSTEMPATH\Common.php(1167): CodeIgniter\View\View->render()
+ 3 APPPATH\Controllers\Biodata.php(40): view()
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Biodata->create()
+ 5 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController()
+ 6 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest()
+ 7 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+ 9 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb()
+10 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\ThinkPad\\Desktop\\Productive\\Kuliah\\Proyek 3 Web Development\\Week 2\\CI4\\public\\index.php')
+DEBUG - 2025-08-31 06:13:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-08-31 06:13:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-08-31 06:13:54 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "biodata/create.php"
+[Method: GET, Route: biodata/create]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(214): CodeIgniter\Exceptions\FrameworkException::forInvalidFile()
+ 2 SYSTEMPATH\Common.php(1167): CodeIgniter\View\View->render()
+ 3 APPPATH\Controllers\Biodata.php(40): view()
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Biodata->create()
+ 5 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController()
+ 6 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest()
+ 7 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+ 9 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb()
+10 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\ThinkPad\\Desktop\\Productive\\Kuliah\\Proyek 3 Web Development\\Week 2\\CI4\\public\\index.php')
+ERROR - 2025-08-31 06:27:01 --> Error connecting to the database: mysqli_sql_exception: No connection could be made because the target machine actively refused it in C:\Users\ThinkPad\Desktop\Productive\Kuliah\Proyek 3 Web Development\Week 2\CI4\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:201
+Stack trace:
+#0 C:\Users\ThinkPad\Desktop\Productive\Kuliah\Proyek 3 Web Development\Week 2\CI4\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(201): mysqli->real_connect()
+#1 C:\Users\ThinkPad\Desktop\Productive\Kuliah\Proyek 3 Web Development\Week 2\CI4\vendor\codeigniter4\framework\system\Database\BaseConnection.php(419): CodeIgniter\Database\MySQLi\Connection->connect()
+#2 C:\Users\ThinkPad\Desktop\Productive\Kuliah\Proyek 3 Web Development\Week 2\CI4\vendor\codeigniter4\framework\system\Database\BaseConnection.php(614): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\Users\ThinkPad\Desktop\Productive\Kuliah\Proyek 3 Web Development\Week 2\CI4\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query()
+#4 C:\Users\ThinkPad\Desktop\Productive\Kuliah\Proyek 3 Web Development\Week 2\CI4\vendor\codeigniter4\framework\system\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\Users\ThinkPad\Desktop\Productive\Kuliah\Proyek 3 Web Development\Week 2\CI4\vendor\codeigniter4\framework\system\BaseModel.php(677): CodeIgniter\Model->doFindAll()
+#6 C:\Users\ThinkPad\Desktop\Productive\Kuliah\Proyek 3 Web Development\Week 2\CI4\app\Controllers\Biodata.php(18): CodeIgniter\BaseModel->findAll()
+#7 C:\Users\ThinkPad\Desktop\Productive\Kuliah\Proyek 3 Web Development\Week 2\CI4\vendor\codeigniter4\framework\system\CodeIgniter.php(933): App\Controllers\Biodata->index()
+#8 C:\Users\ThinkPad\Desktop\Productive\Kuliah\Proyek 3 Web Development\Week 2\CI4\vendor\codeigniter4\framework\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController()
+#9 C:\Users\ThinkPad\Desktop\Productive\Kuliah\Proyek 3 Web Development\Week 2\CI4\vendor\codeigniter4\framework\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest()
+#10 C:\Users\ThinkPad\Desktop\Productive\Kuliah\Proyek 3 Web Development\Week 2\CI4\vendor\codeigniter4\framework\system\Boot.php(363): CodeIgniter\CodeIgniter->run()
+#11 C:\Users\ThinkPad\Desktop\Productive\Kuliah\Proyek 3 Web Development\Week 2\CI4\vendor\codeigniter4\framework\system\Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+#12 C:\Users\ThinkPad\Desktop\Productive\Kuliah\Proyek 3 Web Development\Week 2\CI4\public\index.php(59): CodeIgniter\Boot::bootWeb()
+#13 C:\Users\ThinkPad\Desktop\Productive\Kuliah\Proyek 3 Web Development\Week 2\CI4\vendor\codeigniter4\framework\system\rewrite.php(44): require_once('...')
+#14 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: No connection could be made because the target machine actively refused it in C:\Users\ThinkPad\Desktop\Productive\Kuliah\Proyek 3 Web Development\Week 2\CI4\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:246
+Stack trace:
+#0 C:\Users\ThinkPad\Desktop\Productive\Kuliah\Proyek 3 Web Development\Week 2\CI4\vendor\codeigniter4\framework\system\Database\BaseConnection.php(419): CodeIgniter\Database\MySQLi\Connection->connect()
+#1 C:\Users\ThinkPad\Desktop\Productive\Kuliah\Proyek 3 Web Development\Week 2\CI4\vendor\codeigniter4\framework\system\Database\BaseConnection.php(614): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\Users\ThinkPad\Desktop\Productive\Kuliah\Proyek 3 Web Development\Week 2\CI4\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query()
+#3 C:\Users\ThinkPad\Desktop\Productive\Kuliah\Proyek 3 Web Development\Week 2\CI4\vendor\codeigniter4\framework\system\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+#4 C:\Users\ThinkPad\Desktop\Productive\Kuliah\Proyek 3 Web Development\Week 2\CI4\vendor\codeigniter4\framework\system\BaseModel.php(677): CodeIgniter\Model->doFindAll()
+#5 C:\Users\ThinkPad\Desktop\Productive\Kuliah\Proyek 3 Web Development\Week 2\CI4\app\Controllers\Biodata.php(18): CodeIgniter\BaseModel->findAll()
+#6 C:\Users\ThinkPad\Desktop\Productive\Kuliah\Proyek 3 Web Development\Week 2\CI4\vendor\codeigniter4\framework\system\CodeIgniter.php(933): App\Controllers\Biodata->index()
+#7 C:\Users\ThinkPad\Desktop\Productive\Kuliah\Proyek 3 Web Development\Week 2\CI4\vendor\codeigniter4\framework\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController()
+#8 C:\Users\ThinkPad\Desktop\Productive\Kuliah\Proyek 3 Web Development\Week 2\CI4\vendor\codeigniter4\framework\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest()
+#9 C:\Users\ThinkPad\Desktop\Productive\Kuliah\Proyek 3 Web Development\Week 2\CI4\vendor\codeigniter4\framework\system\Boot.php(363): CodeIgniter\CodeIgniter->run()
+#10 C:\Users\ThinkPad\Desktop\Productive\Kuliah\Proyek 3 Web Development\Week 2\CI4\vendor\codeigniter4\framework\system\Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+#11 C:\Users\ThinkPad\Desktop\Productive\Kuliah\Proyek 3 Web Development\Week 2\CI4\public\index.php(59): CodeIgniter\Boot::bootWeb()
+#12 C:\Users\ThinkPad\Desktop\Productive\Kuliah\Proyek 3 Web Development\Week 2\CI4\vendor\codeigniter4\framework\system\rewrite.php(44): require_once('...')
+#13 {main}
+CRITICAL - 2025-08-31 06:27:01 --> CodeIgniter\Database\Exceptions\DatabaseException: Unable to connect to the database.
+Main connection [MySQLi]: No connection could be made because the target machine actively refused it
+[Method: GET, Route: biodata]
+in SYSTEMPATH\Database\BaseConnection.php on line 465.
+ 1 SYSTEMPATH\Database\BaseConnection.php(614): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query()
+ 3 SYSTEMPATH\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH\BaseModel.php(677): CodeIgniter\Model->doFindAll()
+ 5 APPPATH\Controllers\Biodata.php(18): CodeIgniter\BaseModel->findAll()
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Biodata->index()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest()
+ 9 SYSTEMPATH\Boot.php(363): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+11 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb()
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\ThinkPad\\Desktop\\Productive\\Kuliah\\Proyek 3 Web Development\\Week 2\\CI4\\public\\index.php')
